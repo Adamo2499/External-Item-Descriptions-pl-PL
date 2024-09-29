@@ -354,6 +354,19 @@ EID:updateDescriptionsViaTable(repCollectibles, EID.descriptions[languageCode].c
 
 ---------- Modifiers ----------
 
+-- Buffs caused by Binge Eater
+-- Note: "#" will be replaced with "#{{Collectible664}} " automatically, in order to add Binge eater icon infront of each buff-bulletpoint
+EID.descriptions[languageCode].bingeEaterBuffs = {
+	[22] = "↑+0.5 Szybkostrzelności#↑+1.5 Zasięgu", -- Lunch
+	[23] = "↑+0.5 Szybkostrzelności#↑+0.2 Prędkości Strzałów", -- Dinner
+	[24] = "↑+1.0 Obrażeń#↑+0.2 Prędkości", -- Dessert
+	[25] = "↑+0.2 Prędkości#↑+1.5 Zasięgu", -- Breakfast
+	[26] = "↑+1.0 Obrażeń#↑+1.5 Zasięgu", -- Rotten Meat
+	[456] = "↑+1.0 Obrażeń#↑+1.0 Szczęścia", -- Midnight Snack
+	[346] = "↑+0.2 Prędkości Strzałów#↑+1.0 Szczęścia", -- A Snack
+	[707] = "↑+0.5 Szybkostrzelności#↑+1.0 Szczęścia", -- Supper
+}
+
 EID.descriptions[languageCode].birthright ={
 	{"Isaac", "Izaak", "Wszystkie przedmioty przewijają się przez 2 opcje"},
 	{"Magdalene", "Magdalena", "<No effect yet>"},
@@ -398,18 +411,7 @@ EID.descriptions[languageCode].birthright ={
 	{"Tainted Forgotten Soul", "Splamiona Dusza Zapomnianego", "Dusza zyskuje możliwośc przywołania {{Collectible714}}, która pomaga podnieśc ciało Zapomnianego z dystansu"},
 }
 
--- Buffs caused by Binge Eater
--- Note: "#" will be replaced with "#{{Collectible664}} " automatically, in order to add Binge eater icon infront of each buff-bulletpoint
-EID.descriptions[languageCode].bingeEaterBuffs = {
-	[22] = "↑+0.5 Szybkostrzelności#↑+1.5 Zasięgu", -- Lunch
-	[23] = "↑+0.5 Szybkostrzelności#↑+0.2 Prędkości Strzałów", -- Dinner
-	[24] = "↑+1.0 Obrażeń#↑+0.2 Prędkości", -- Dessert
-	[25] = "↑+0.2 Prędkości#↑+1.5 Zasięgu", -- Breakfast
-	[26] = "↑+1.0 Obrażeń#↑+1.5 Zasięgu", -- Rotten Meat
-	[456] = "↑+1.0 Obrażeń#↑+1.0 Szczęścia", -- Midnight Snack
-	[346] = "↑+0.2 Prędkości Strzałów#↑+1.0 Szczęścia", -- A Snack
-	[707] = "↑+0.5 Szybkostrzelności#↑+1.0 Szczęścia", -- Supper
-}
+
 
 EID.descriptions[languageCode].spindownError = "Przedmiot znika"
 
