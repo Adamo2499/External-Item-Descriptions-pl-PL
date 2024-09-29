@@ -9,6 +9,8 @@
 -- ↑ = Up Arrow  |  ↓ = Down Arrow  |  ! = Warning
 local languageCode = "pl"
 
+---------- Collectibles ----------
+
 local repCollectibles={
 	[5] = {"5", "Moje Odbicie", "Daje łzom efekt bumerangu#↑ +1.5 Zasięgu#↑ +60% dodatkowego Zasięgu#↑ +0.6 Prędkości strzałów#↑ +1 Wysokości lotu łez"}, -- My Reflection
 	[6] = {"6", "Numer Jeden", "↑ +1.5 Szybkostrzelności#↓ -1.5 Zasięgu#↓ -20% mnożnika Zasięgu#↑ +0.76 Wysokości lotu łez"}, -- Number One
@@ -349,6 +351,8 @@ local repCollectibles={
 	[729] = {"729", "Dakapito atak", "Rzuca głową postaci która po wylądowaniu jest stacjonara i dalej strzela#Ponowne użycie lub nadepnięcie na głowę przyczepia ją spowrotem"}, --  Decap Attack
 }
 EID:updateDescriptionsViaTable(repCollectibles, EID.descriptions[languageCode].collectibles)
+
+---------- Modifiers ----------
 
 EID.descriptions[languageCode].birthright ={
 	{"Isaac", "Izaak", "Wszystkie przedmioty przewijają się przez 2 opcje"},
