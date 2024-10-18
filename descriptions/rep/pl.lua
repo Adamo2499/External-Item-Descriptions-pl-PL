@@ -367,6 +367,43 @@ EID.descriptions[languageCode].bingeEaterBuffs = {
 	[707] = "↑+0.5 Szybkostrzelności#↑+1.0 Szczęścia", -- Supper
 }
 
+-- Buffs caused by Book of Belial with Judas' Birthright
+-- Note: "#" will be replaced with "#{{Collectible34}} " automatically, in order to add Book of Belial icon in front of each buff-bulletpoint
+EID.descriptions[languageCode].bookOfBelialBuffs = {
+	[40] = "Aktywuje także efekt {{Collectible35}} Nekronomikonu", -- Kamikaze!
+	[126] = "Aktywuje także efekt {{Collectible35}} Nekronomikonu", -- Razor Blade
+	[127] = "↑ {{Damage}} +2 Obrażeń na następne piętro", -- Forget me Now
+	[133] = "↑ {{Damage}} +0.5 Obrażeń", -- Guppy's Paw
+	[135] = "Temporary ↑ {{Damage}} +0.66 Obrażeń za każde użycie", -- IV Bag
+	[147] = "Siekiera ma zwiększoną wytrzymałość i odpychanie, może być użyta szybciej, {{Burning}} podpala przeciwników oraz wyrzuca więcej rzeczy podczas niszczenia kup i ognisk.", -- Notched Axe
+	[186] = "Aktywuje też efekt {{Collectible126}} Żyletki", -- Blood Rights
+	[282] = "Pozostawia ślad ognia, który zadaje obrażenia kontaktowe i {{Burning}} podpala przeciwników", -- How to Jump
+	[290] = "Użycie przedmiotu zużywa serce, daje zwiększone {{Damage}} obrażenia i pozostawia czerwony szlam na podłodze", -- The Jar
+	[295] = "Ma szansę na aktywowanie {{Collectible555}} Złotej Żyletki", -- Magic Fingers
+	[297] = "Pernamentie daje demonicznego przyjaciela oprócz standardowych nagród", -- Pandora's Box
+	[323] = "Strzela 10 penetrujących i spektralnych pocisków z zwiększonymi obrażeniami", -- Isaac's Tears
+	[326] = "Zamiast pojawienia, masz ognistą aurę podczas bycia mietykalnym#Daje tymczasowe {{Damage}} zwiększenie obrażeń i aktywuje efekt {{Collectible35}} Nekronomikonu przy perfekcyjnym bloku", -- Breath of Life
+	[352] = "Aktywuje {{Collectible34}} Księgi Beliala gdy zostaje zniszczony# Zwiększenie obrażeń działa dopóki działo jest naprawione", -- Glass Cannon
+	[475] = "Odradza Judasza jako Czarnego Judasza jeżeli ma dodatkowe życie", -- Plan C
+	[482] = "Replaces the most recently acquired item with {{Collectible51}} Pentagram instead of removing it", -- Clicker
+	[487] = "Additional ↑ {{Damage}} +0.5 damage", -- Potato Peeler
+	[536] = "For each familiar sacrificed:#↑ {{Damage}} +10.8 damage that slowly fades away", -- Sacrificial Altar
+	[555] = "Damages all enemies in the room#Enemies killed by this may drop 1-2 pennies", -- Golden Razor
+	[577] = "Permanent ↑ {{Damage}} damage up", -- Damocles
+	[582] = "Permanent ↑ {{Damage}} damage up based on the highest number of times the effects of the item has been stacked", -- Wavy Cap
+	[585] = "Changes the payout to 2 Black Hearts and 1 Devil Deal item#Becomes 3 hearts and 2 items if a Devil Deal has been taken", -- Alabaster Box
+	[622] = "Grants a free {{Collectible51}} Pentagram", -- Genesis
+	[623] = "Also invokes the effect of {{Collectible126}} Razor Blade", -- Sharp Key
+	[635] = "Creates a {{Collectible705}} Dark Arts line between Judas and Stitches", -- Stitches
+	[640] = "Launches a {{Collectible118}} Brimstone beam instead", -- Urn of Souls
+	[642] = "↑ {{Damage}} x1.4 Damage multiplier#↑ {{Damage}} +1 Damage", -- Magic Skin
+	[653] = "Ghosts home in on enemies", -- Vade Retro
+	[685] = "Spawns {{Collectible292}} Satanic Bible wisps#{{DevilChance}} +10% Devil Room chance per wisp", -- Jar of Wisps
+	[705] = "Temporary ↑ {{Damage}} damage up for every enemy/projectile hit", -- Dark Arts
+	[710] = "Picking up {{Heart}} Red Hearts has a chance to replace them with a {{BlackHeart}} Black Heart", -- Bag of Crafting
+	[729] = "While the head is detached:#↑ {{Tears}} x3 Fire rate multiplier#↑ {{Damage}} +2 Damage", -- Decap Attack
+}
+
 EID.descriptions[languageCode].birthright ={
 	{"Isaac", "Izaak", "Wszystkie przedmioty przewijają się przez 2 opcje"},
 	{"Magdalene", "Magdalena", "<No effect yet>"},
