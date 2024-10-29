@@ -702,55 +702,8 @@ local repBFFSSynergies = {
 }
 EID:updateDescriptionsViaTable(repBFFSSynergies, EID.descriptions[languageCode].BFFSSynergies)
 
-EID.descriptions[languageCode].birthright ={
-	{"Isaac", "Izaak", "Wszystkie przedmioty przewijają się przez 2 opcje"},
-	{"Magdalene", "Magdalena", "↑ {{Heart}} +1 Czerwony kontener#Maksymalna ilość kontenerów na serca jest zwiększona do 18"},
-	{"Cain", "Kain", "↑ {{Luck}} +1 Szczęścia#{{ArcadeRoom}} Wszystkie przyszłe piętra będą zawierały ulepszony Arcade Room (poza Ciemnym Pokojem i Skrzynią)#{{Collectible46}} Znacznie zwiększa szanse Szczęśliwej Stopy na wygraną."},
-	{"Judas", "Judasz", "{{Collectible34}} Księga Beliala staje się przedmiotem pasywnym podobnie do {{Collectible584}} Księgi płomyków#{{Collectible34}}Daje Księgę Beliala jeżeli Judasz aktualnie jej nie trzyma#↑ {{Damage}} Zwiększenie obrażeń skaluje się z ilością ładunków, który posiada połączony przedmiot aktywny"},
-	{"???", "???", "{{SoulHeart}} Serca duszy otrzymane z ulepszeń zdrowia są podwojone"},
-	{"Eve", "Ewa", "{{Collectible122}} Efekt Nierządnicy z babilonu jest aktywny zawsze, nie zwracając uwagi na ilość zdrowia#{{Collectible117}} Martwy ptak jest zawsze aktywny"},
-	{"Samson", "Samson", "{{Collectible157}} Żądza krwimoże zostać aktywowana jeszcze 4 razy na piętro, do +14 obrażeń po 10 aktywacjach"},
-	{"Azazel", "Azazel", "Laser Azazela jest o wiele szerszy#Nie zwiększa obrażeń"},
-	{"Lazarus", "Łazarz", "↑ Odrodzenie jako Powstały Łazarz daje {{Damage}} +7.2 obrażeń#{{Timer}} Zwiększone obrażenia znikają po 60 sekundach#{{Blank}}  Zabijanie wrogów, gdy efekt jest aktywny, przedłuża go"},
-	{"Eden", "Eden", "Pojawia 3 losowe przedmioty z losowych puli przedmiotów#Tylko jeden może zostać podniesiony"},
-	{"The Lost", "Zaginiony", "Zapobiega pojawianiu się przedmiotów bez benefitowych dla Losta#Przykłady: Przedmioty dające tylko zdrowie, latnie i/lub spektralne strzały lub aktywujące  się po otrzymaniu obrażeń"},
-	{"Lazarus Risen", "Powstały Łazarz", "↑ {{Damage}} +7.2 Obrażeń#Zwiększone obrażenia znikają po 60 sekundach#Zabijanie wrogów, gdy efekt jest aktywny, przedłuża go#Efekt uruchamia się za każdym razem, gdy Łazarz odradza się jako Łazarz Powstały"},
-	{"Black Judas", "Czarny Judasz", "{{Collectible34}} Księga Beliala staje się przedmiotem pasywnym podobnym do {{Collectible584}} Księgi płomieni #{{Collectible34}} Przyznaje Księgę Beliala, jeśli Judasz nie jest w jej posiadaniu#↑ {{Obrażenia}} Przyznawane przez nią zwiększenie obrażeń skaluje się wraz z liczbą ładunków aktywnego przedmiotu w połączeniu z nią##Daje specjalne efekty niektórym aktywnym przedmiotom"},
-	{"Lilith", "Lilit", "Familiary są ustawiane na wprost Lilit"},
-	{"Keeper", "Dozorca", "↑ {{CoinHeart}} +1 Zdrowie#Maksymalna liczba pojemników z Monetowym Sercem zostaje zwiększona do 4"},
-	{"Apollyon", "Apollyon", "{{Collectible477}} Użycie Pustki daje szansę na odrodzenie się przedmiotu, który został wcześniej zjedzony#Nie usuwa premii do statystyk#Im więcej zjedzonych przedmiotów, tym większa szansa na odrodzenie się przedmiotu po użyciu"},
-	{"The Forgotten", "Zapomniany", "Dusza nie posiada łańucucha i swobodnie się porusza"},
-	{"The Forgotten Soul", "Dusza Zapomnianego", "Dusza nie posiada łańucucha i swobodnie się porusza"},
-	{"Bethany", "Betania", "Aktywowanie przedmiotu za pomocą ładunków duszy jest czasami darmowe"},
-	{"Jacob", "Jakub", "Postać która podniosła przedmiot otrzymuje kopie trzech przedmiotów pasywnych drugiej postaci"},
-	{"Esau", "Ezaw", "Postać która podniosła przedmiot otrzymuje kopie trzech przedmiotów pasywnych drugiej postaci"},
-	{"Tainted Isaac", "Splamiony Izaak", "Dodaje 4 miejsca na przedmioty pasywne# Sam nie zużywa miejsca"},
-	{"Tainted Magdalene", "Splamiona Magdalena", "Dodaje jedno czerwone serce które nie zanika"},
-	{"Tainted Cain", "Splamiony Kain", "Ilość pickupów pojawianych z dotykania przedmiotów jest podwojona"},
-	{"Tainted Judas", "Splamiony Judasz", "{{Collectible705}} Zwiększa zasięg, w jakim Mroczne Techniki trafia wrogów i ich pociski"},
-	{"Tainted ???", "Splamiony ???", "Zwiększa maksymalny limit trzymanych kup do 29"},
-	{"Tainted Eve", "Splamiona Ewa", "{{HalfHeart}} Zakrzepy Czerwonego Serca generują połówki Czerwonych Serc po śmierci, które znikają po 2 sekundach."},
-	{"Tainted Samson", "Splamiony Samson", "Czas berserkera jest wydłużony o 3 sekundy zamiast jedną gdy splamiony samson zabije przeciwnika"},
-	{"Tainted Azazel", "Splamiony Azazel", "Podwaja wielkość ataku Kichnięcia krwią {{Collectible726}} Splamionego azazela"},
-	{"Tainted Lazarus", "Splamiony Łazarz", "Nieaktywna forma Splamionego Lazarusa pojawia się jako widmowa druga postać#Jest nietykalny i zadaje 25% obrażeń#Obydwie formy otrzymują Birthrighta"},
-	{"Tainted Eden", "Splamiony Eden", "Żadne przedmioty zdobyte przed Birthrightem nie mogą już zostać ponownie przetasowane#Aktywne przedmioty mogą zostać ponownie przetasowane, jeśli zostaną upuszczone i podniesione."},
-	{"Tainted Lost", "Splamiony Zaginiony", "Dodatkowe życie odradzające splamionego Zaginionego w tym samym pokoju i zadające pobliskim przeciwnikom 200 pkt obrażeń#Może trafić tego samego przeciwnika kilka razy"},
-	{"Tainted Lilith", "Splamiona Lilit ", "{{Collectible728}} Familiary, które normalnie podążają za Splamiona Lilit, zamiast tego podążają za jej Gello# Atak w zwarciu otrzymuje +3 obrażenia za każdego familiara"},
-	{"Tainted Keeper", "Splamiony Dozorca", "{{Coin}} Mocno przyciąga do postaci monety pojawione poprzez zabijanie przeciwników#Brak efektu dla innych monet"},
-	{"Tainted Apollyon", "Splamiony Apollyon", "Szarańcza nieustannie zadaje obrażenia wrogom, nie powracając po przytrzymaniu przycisku strzału."},
-	{"Tainted Forgotten", "Splamiony Zapomniany", "Dusza zyskuje możliwośc przywołania {{Collectible705}}, która pomaga podnieśc ciało Zapomnianego z dystansu#Dusza jest nietykalna, podczas gdy Zapomniany wraca"},
-	{"Tainted Bethany", "Splamiona Betania", "Pojawiają się cztery losowe wispy przedmiotów o jakości {{Quality3}} i {{Quality4}} ze znacznie wyższymi PŻ niż normalnie"},
-	{"Tainted Jacob", "Splamiony Jakub", "Mroczny Ezaw rozdziela się na dwie części, tworząc swojego cienistego klona#Oba Ezawy ładują się zawsze w tym samym czasie#{{Collectible722}} Czas odnowienia Anima Sola zostaje skrócony do 10 sekund#Użycie Anima Sola łączy oba Ezausy na 6,67 sek."},
-	{"Dead Tainted Lazarus", "Marwy Splamiony Łazarz", "Nieaktywna forma Splamionego Lazarusa pojawia się jako widmowa druga postać#Jest nietykalny i zadaje 25% obrażeń#Obydwie formy otrzymują Birthrighta"},
-	{"Tainted Jacob 2", "Splamiony Jakub 2", ""},
-	{"Tainted Forgotten Soul", "Splamiona Dusza Zapomnianego", "Dusza zyskuje możliwośc przywołania {{Collectible705}}, która pomaga podnieśc ciało Zapomnianego z dystansu#Dusza jest nietykalna, podczas gdy Zapomniany wraca"},
-}
-
-
-
-EID.descriptions[languageCode].spindownError = "Przedmiot znika"
-
 ---------- Trinkets ----------
+
 local repTrinkets={
 	[1] = {"1", "Połknięty Pieniążek", "Upuszcza 1 monetę, gdy otrzymasz obrażenia#0-1, gdy grasz Dozorcą/Keeperem"}, -- Swallowed Penny
 	[10] = {"10", "Rozhuśtany Robak", "Falujące łzy#↑ +0.4 Szybkostrzelności#Gwarantuje widmowe łzy"}, -- Wiggle Worm
@@ -839,37 +792,56 @@ local repTrinkets={
 }
 EID:updateDescriptionsViaTable(repTrinkets, EID.descriptions[languageCode].trinkets)
 
--- Card Buffs caused by Tarot Cloth
--- Note: "#" will be replaced with "#{{Collectible451}}" automatically, in order to add Tarot Cloth icon infront of each buff-bulletpoint
-
-EID.descriptions[languageCode].tarotClothBuffs = {
-	[2] = "Aktywuje efekt{{Collectible34}}Księgi Beliala", -- I - The Magician
-	[3] = "Druga noga uderza zaraz po pierwszej", -- II - The High Priestess
-	[4] = "Poczwarza Obrażenia postaci przy użyciu", -- III - The Empress
-	[5] = "Jeśli Boss nie został pokonany, otrzymujesz 1 serce duszy przy teleportacji", -- IV - The Emperor
-	[6] = "Pojawia 3 serca duszy", -- V - The Hierophant
-	[7] = "Pojawia 3 czerwone serca", -- VI - The Lovers
-	[8] = "Podwójna długośc efektu", -- VII - The Chariot
-	[9] = "podwaja pojawione Rzeczy", -- VIII - Justice
-	[10] = "zapobiega przed pojawianiem się greeda w sklepie", -- IX - The Hermit
-	[11] = "Pojawia 2 maszyny do gier", -- X - Wheel of Fortune
-	[12] = "Podwaja zwiększenia zstatystyk nie wliczając obrażeń", -- XI - Strength
-	[14] = "Zadaje 80 punktów obrażeń", -- XIII - Death
-	[15] = "Pojawia 2 maszyny do oddawania krwi", -- XIV - Temperance
-	[16] = "Zwiększenie obrażeń jest podwojone", -- XV - The Devil
-	[17] = "Postać ma 2 przedmioty do wyboru jeśli jeszcze nie odwiedziła Treasure roomu", -- XVII - The Stars
-	[21] = "pojawia 2 żebraków", -- XX - Judgement
-	[56] = "Wyrzuca wszystkie przedmioty i pickupy wliczając cerate do tarota", -- 0 - The Fool?
-	[59] = "Dodaje 3 tymczasowe kontenery na serca", -- III - The Empress?
-	[61] = "Pojawia 6 kościanych serc", -- V - The Hierophant?
-	[62] = "Dodaje 4 złamane serca i pojawia 4 przedmioty", -- VI - The Lovers?
-	[64] = "pojawia od 4-14 Złotych skrzyń", -- VIII - Justice?
-	[70] = "postać zjada 20 piguł", -- XIV - Temperance?
-	[72] = "Pojawia 14 kamieni", -- XVI - The Tower?
-	[73] = "Usuwa 2 przedmioty w zamian pojawiając 4", -- XVII - The Stars?
-	[76] = "Pojawia 2 maszyny do zmiany przedmiotów", -- XX - Judgement?
-}
 EID.descriptions[languageCode].goldenTrinket = "ZŁOTE: Zdwojony Efekt!"
+EID.descriptions[languageCode].tripledTrinket = "Effect tripled!"
+EID.descriptions[languageCode].quadrupledTrinket = "Effect quadrupled!"
+
+-- Most trinkets that can be doubled or tripled just have the numbers in their description multiplied
+-- A few trinkets have odd edge cases where their effect completely changes, or is different depending on if it's Mom's Box or Golden
+EID.descriptions[languageCode].goldenTrinketEffects = {
+	-- Broken Remote (replace with Teleport 2.0 info)
+	[4] = { "{{Collectible419}} Using an active item teleports Isaac to {{ColorGold}}a room that has not been cleared yet{{CR}}#Hierarchy: {{Room}}>{{BossRoom}}>{{SuperSecretRoom}}>{{Shop}}>{{TreasureRoom}}>{{SacrificeRoom}}> {{DiceRoom}}>{{Library}}>{{CursedRoom}}>{{MiniBoss}}>{{ChallengeRoom}}{{BossRushRoom}}>{{IsaacsRoom}}{{BarrenRoom}}> {{ArcadeRoom}}>{{ChestRoom}}>{{Planetarium}}>{{SecretRoom}}>{{DevilRoom}}{{AngelRoom}}>{{ErrorRoom}}"}, -- Teleport 2.0
+	-- Broken Magnet (find+replace): find Phrase #1 in the localized description, change it to Phrase #2 for doubled
+	[6] = { "coins", "pickups" },
+	-- Rosary Bead append
+	[7] = { "{{Collectible72}} Rosary is added to all item pools" },
+	-- Golden Store Credit: full replace
+	[13] = { "{{Shop}} {{ColorGold}}Allows Isaac to take Shop items for free{{CR}}#Chance to turn into a regular {{Trinket13}} Store Credit after each purchase" },
+	-- Lucky Rock append (Gold / Mom's Box / Both)
+	[15] = { "Rocks may drop 2 coins", "Rocks may drop 2 coins", "Rocks may drop 3 coins" },
+	-- Golden Mysterious Candy makes Golden Poop
+	[25] = { "poop", "golden poop" },
+	-- Isaac's Fork (find+replace): find Phrase #1 in the localized description, change it to Phrase #2 or 3 for doubled/tripled
+	[46] = { "half a heart", "a heart", "one and a half hearts" },
+	-- Tick (replace): A full replacement for Golden / Mom's Box / Both, as the Golden version can be removed and only one effect is tripled
+	[53] = {
+		"{{HealingRed}} Heals {{ColorGold}}2{{CR}} hearts when entering a {{BossRoom}}Boss Room#-{{ColorGold}}30{{CR}}% boss health#{{ColorGold}}Removable!",
+		"{{HealingRed}} Heals {{ColorGold}}2{{CR}} hearts when entering a {{BossRoom}}Boss Room#-{{ColorGold}}30{{CR}}% boss health#{{Warning}} Once picked up, it can't be removed#Only removeable with {{Trinket41}}Match Stick or gulping",
+		"{{HealingRed}} Heals {{ColorGold}}3{{CR}} hearts when entering a {{BossRoom}}Boss Room#-{{ColorGold}}30{{CR}}% boss health#{{ColorGold}}Removable!",
+	},
+	-- Rainbow Worm (append): With Mom's Box, it gives 2 copies of the temp worm, and doubles 1 of those copies, for triple effect
+	[64] = { "Worm's stat boosts are doubled", "Worm's stat boosts are tripled", "Worm's stat boosts are quadrupled", },
+	-- Error (append): Same behavior as Rainbow Worm
+	[75] = { "Trinket effect is doubled if possible", "Trinket effect is tripled if possible", "Trinket effect is quadrupled if possible", },
+	-- NO!
+	[88] = { "Prevents Quality {{Quality0}} items from spawning" },
+	-- Gilded Key (Golden version only): it doesn't give a key. bug that might get fixed (maybe it'll give a Golden Key?)
+	[159] = { "Replaces all chests (except Old/Mega) with golden chests#Golden chests can contain extra cards, pills or trinkets" },
+	-- The Twins
+	[183] = { "May copy/grant 2 familiars", "May copy/grant 2 familiars", "May copy/grant 3 familiars" },
+}
+
+--[[
+Localizations may choose to overwrite specific data from EID.GoldenTrinketData in this table. For advanced users only.
+Example: If French uses "Double" instead of "2x" for Purple Heart, they can do:
+EID.descriptions[languageCode].goldenTrinketData = {
+	[5] = {findReplace = true, mult = 2},
+}
+and then place
+	[5] = { "Double", "Quadruple" },
+in their goldenTrinketEffects
+]]
+EID.descriptions[languageCode].goldenTrinketData = { }
 
 ---------- Cards ----------
 
@@ -924,6 +896,37 @@ local repCards={
 	[97] = {"97", "Dusza Jakuba i Ezawa", "Pojawia Esau jako drugą postać do końca pokoju"},
 }
 EID:updateDescriptionsViaTable(repCards, EID.descriptions[languageCode].cards)
+
+-- Card Buffs caused by Tarot Cloth
+-- Note: "#" will be replaced with "#{{Collectible451}}" automatically, in order to add Tarot Cloth icon infront of each buff-bulletpoint
+
+EID.descriptions[languageCode].tarotClothBuffs = {
+	[2] = "Aktywuje efekt{{Collectible34}}Księgi Beliala", -- I - The Magician
+	[3] = "Druga noga uderza zaraz po pierwszej", -- II - The High Priestess
+	[4] = "Poczwarza Obrażenia postaci przy użyciu", -- III - The Empress
+	[5] = "Jeśli Boss nie został pokonany, otrzymujesz 1 serce duszy przy teleportacji", -- IV - The Emperor
+	[6] = "Pojawia 3 serca duszy", -- V - The Hierophant
+	[7] = "Pojawia 3 czerwone serca", -- VI - The Lovers
+	[8] = "Podwójna długośc efektu", -- VII - The Chariot
+	[9] = "podwaja pojawione Rzeczy", -- VIII - Justice
+	[10] = "zapobiega przed pojawianiem się greeda w sklepie", -- IX - The Hermit
+	[11] = "Pojawia 2 maszyny do gier", -- X - Wheel of Fortune
+	[12] = "Podwaja zwiększenia zstatystyk nie wliczając obrażeń", -- XI - Strength
+	[14] = "Zadaje 80 punktów obrażeń", -- XIII - Death
+	[15] = "Pojawia 2 maszyny do oddawania krwi", -- XIV - Temperance
+	[16] = "Zwiększenie obrażeń jest podwojone", -- XV - The Devil
+	[17] = "Postać ma 2 przedmioty do wyboru jeśli jeszcze nie odwiedziła Treasure roomu", -- XVII - The Stars
+	[21] = "pojawia 2 żebraków", -- XX - Judgement
+	[56] = "Wyrzuca wszystkie przedmioty i pickupy wliczając cerate do tarota", -- 0 - The Fool?
+	[59] = "Dodaje 3 tymczasowe kontenery na serca", -- III - The Empress?
+	[61] = "Pojawia 6 kościanych serc", -- V - The Hierophant?
+	[62] = "Dodaje 4 złamane serca i pojawia 4 przedmioty", -- VI - The Lovers?
+	[64] = "pojawia od 4-14 Złotych skrzyń", -- VIII - Justice?
+	[70] = "postać zjada 20 piguł", -- XIV - Temperance?
+	[72] = "Pojawia 14 kamieni", -- XVI - The Tower?
+	[73] = "Usuwa 2 przedmioty w zamian pojawiając 4", -- XVII - The Stars?
+	[76] = "Pojawia 2 maszyny do zmiany przedmiotów", -- XX - Judgement?
+}
 
 ---------- Pills ----------
 
@@ -994,11 +997,363 @@ EID.descriptions[languageCode].horsepills={
 	[9999] = {"", "Złota Pigułka", "Efekt losowej, końskiej pigułki#Niszczy się po kilku użyciach"}, -- golden Pill
 }
 
+---------- Character Info ----------
+local repCharacterInfo = {
+	[4] = {"???", "Can't have Red Hearts#{{SoulHeart}} Health ups grant Soul Hearts#{{DevilRoom}} Devil deals that would cost 1 or 2 Red Hearts will cost 1 or 2 Soul Hearts instead#Destroying poop spawns 1 blue fly"},
+	[8] = {"Lazarus", "Once per floor, when you die:#Resurrect as Lazarus Risen#Lose 1 Red Heart container#↑ {{Damage}} 0.5 Damage up"},
+	[11] = {"Lazarus Risen", "Increased stats and x1.4 damage multiplier#When entering a new floor, turn back into Lazarus"},
+	[12] = {"Dark Judas", "{{Damage}} x2 Damage multiplier#Can't have Red Hearts#{{BlackHeart}} Health ups grant Black Hearts#{{Player3}} Counts as Judas for completion marks"},
+	[14] = {"Keeper", "{{CoinHeart}} Heal by picking up coins#Maximum of 3 Coin Hearts#Heart pickups are turned into Blue Flies#{{DevilRoom}} Devil deals cost 15 or 30 coins"},
+	[18] = {"Bethany", "{{SoulHeart}} Use Soul Hearts to charge your active item#Can't use Soul Hearts as health"},
+	[19] = {"Jacob", "Control Jacob and Esau at the same time#Both characters drop a bomb when one is used#Esau stays in place while holding {{ButtonRT}}#{{ButtonLT}} uses Jacob's active, {{ButtonRB}} uses Esau's active, hold {{ButtonRT}} to use their card/pill#When there's a choice between items, Jacob and Esau can grab two simultaneously"},
+	[20] = {"Esau", "Control Jacob and Esau at the same time#Both characters drop a bomb when one is used#Esau stays in place while holding {{ButtonRT}}#{{ButtonLT}} uses Jacob's active, {{ButtonRB}} uses Esau's active, hold {{ButtonRT}} to use their card/pill#When there's a choice between items, Jacob and Esau can grab two simultaneously"},
+	
+	[21] = {"Tainted Isaac", "Item pedestals cycle between 2 options#You can only carry 8 passive items#Change which item will be dropped for a 9th item with {{ButtonRT}}"},
+	[22] = {"Tainted Magdalene", "Health above 2 Red Hearts will slowly drain#On contact, do a melee swing for 6x damage#{{HalfRedHeart}} Chance for enemies to drop Half Red Hearts that disappear in 2 seconds#Drop is guaranteed on melee kill#{{Collectible45}} Heal twice as much from non-pickup sources#{{AngelDevilChance}} Damage taken to draining hearts doesn't affect Devil Deal chance"},
+	[23] = {"Tainted Cain", "Touching an item pedestal turns it into a variety of pickups"},
+	[24] = {"Tainted Judas", "Can't have Red Hearts#{{BlackHeart}} Health ups grant Black Hearts"},
+	[25] = {"Tainted ???", "Bombs are replaced with Poop Spells#{{Crafting29}} Doing damage spawns poop pickups#{{Collectible715}} You can store the next spell for later by using Hold"},
+	[26] = {"Tainted Eve", "Holding Fire converts your hearts into Clot familiars#Different Heart types spawn Clots with more health and tear effects#Clots lose health over time#Clots stay in place while holding {{ButtonRT}}#At half a heart left with no Clots, you gain a Mom's Knife-like attack until you heal and leave the room"},
+	[27] = {"Tainted Samson", "Dealing or taking damage builds up Berserk mode#{{Timer}} When you go berserk, receive for 5 seconds:#↑ {{Speed}} +0.4 Speed#↓ {{Tears}} x0.5 Fire rate multiplier#↑ {{Tears}} +2 Fire rate#↑ {{Damage}} +3 Damage#Restricts attacks to a melee that reflects shots#{{Timer}} Each kill increases the duration by 1 second and grants brief invincibility"},
+	[28] = {"Tainted Azazel", "When you start charging, you sneeze blood#Hitting an enemy with the sneeze halves your charge time#The sneeze deals 1.5x Azazel's damage#{{BrimstoneCurse}} Affected enemies take extra damage from Brimstone beams#On death, cursed enemies explode and pass on the curse to nearby enemies"},
+	[29] = {"Tainted Lazarus", "Lazarus has two states, each with their own items and health#Clearing a room/wave or using Flip switches to the other state"},
+	[30] = {"Tainted Eden", "When you take damage, reroll your stats, items, trinket, and consumables#Items reroll into an item from the same item pool#Self-damage doesn't reroll"},
+	[31] = {"Tainted Lost", "{{Card51}} Cards that spawn have a 10% chance to be Holy Card#Quality {{Quality2}} or less items have a 20% chance to be rerolled#Only \"offensive\" items can spawn"},
+	[32] = {"Tainted Lilith", "Pressing Fire launches a short-range fetus melee attack that does 3x damage#Holding Fire keeps the fetus out shooting tears towards the nearest enemy"},
+	[33] = {"Tainted Keeper", "Maximum of 2 Coin Hearts#Enemies drop coins that disappear in 2 seconds#Most item pedestals cost 15 coins#Devil deals and Angel items cost 15 or 30 coins#Shops don't require a key and have increased stock"},
+	[34] = {"Tainted Apollyon", ""},
+	[35] = {"Tainted Forgotten", "The Forgotten is an immobile bone pile that is picked up and thrown by The Soul for 3x damage#Only The Soul can take damage#Bombs are placed at Forgotten's location#Can't have Red Hearts#{{SoulHeart}} Health ups grant Soul Hearts"},
+	[36] = {"Tainted Bethany", "{{Heart}} Use Red Hearts to charge your active item#Can't have Red Hearts#{{SoulHeart}} Health ups grant Soul Hearts and blood charges#Stat increases are only 75% effective"},
+	[37] = {"Tainted Jacob", "Dark Esau chases you, charging towards you when close#The charge does a lot of damage to enemies#If he hits you, you turn into a ghost that dies in one hit for the rest of the floor#While a ghost, one devil deal per room can be taken for free"},
+	[38] = {"Dead Tainted Lazarus", "Lazarus has two states, each with their own items and health#Clearing a room/wave or using Flip switches to the other state"},
+	[39] = {"Tainted Jacob's Soul", "Flight#Spectral tears#{{Warning}} No health#{{Warning}} Die if hit by Dark Esau#{{DevilRoom}} One devil deal per room can be taken for free#Turn back into Tainted Jacob in the next floor"},
+	[40] = {"Tainted Forgotten Soul", "The Forgotten is an immobile bone pile that is picked up and thrown by The Soul for 3x damage#Only The Soul can take damage#Bombs are placed at Forgotten's location#Can't have Red Hearts#{{SoulHeart}} Health ups grant Soul Hearts"},
+}
+EID:updateDescriptionsViaTable(repCharacterInfo, EID.descriptions[languageCode].CharacterInfo)
+
+EID.descriptions[languageCode].birthright ={
+	{"Isaac", "Izaak", "Wszystkie przedmioty przewijają się przez 2 opcje"},
+	{"Magdalene", "Magdalena", "↑ {{Heart}} +1 Czerwony kontener#Maksymalna ilość kontenerów na serca jest zwiększona do 18"},
+	{"Cain", "Kain", "↑ {{Luck}} +1 Szczęścia#{{ArcadeRoom}} Wszystkie przyszłe piętra będą zawierały ulepszony Arcade Room (poza Ciemnym Pokojem i Skrzynią)#{{Collectible46}} Znacznie zwiększa szanse Szczęśliwej Stopy na wygraną."},
+	{"Judas", "Judasz", "{{Collectible34}} Księga Beliala staje się przedmiotem pasywnym podobnie do {{Collectible584}} Księgi płomyków#{{Collectible34}}Daje Księgę Beliala jeżeli Judasz aktualnie jej nie trzyma#↑ {{Damage}} Zwiększenie obrażeń skaluje się z ilością ładunków, który posiada połączony przedmiot aktywny"},
+	{"???", "???", "{{SoulHeart}} Serca duszy otrzymane z ulepszeń zdrowia są podwojone"},
+	{"Eve", "Ewa", "{{Collectible122}} Efekt Nierządnicy z babilonu jest aktywny zawsze, nie zwracając uwagi na ilość zdrowia#{{Collectible117}} Martwy ptak jest zawsze aktywny"},
+	{"Samson", "Samson", "{{Collectible157}} Żądza krwimoże zostać aktywowana jeszcze 4 razy na piętro, do +14 obrażeń po 10 aktywacjach"},
+	{"Azazel", "Azazel", "Laser Azazela jest o wiele szerszy#Nie zwiększa obrażeń"},
+	{"Lazarus", "Łazarz", "↑ Odrodzenie jako Powstały Łazarz daje {{Damage}} +7.2 obrażeń#{{Timer}} Zwiększone obrażenia znikają po 60 sekundach#{{Blank}}  Zabijanie wrogów, gdy efekt jest aktywny, przedłuża go"},
+	{"Eden", "Eden", "Pojawia 3 losowe przedmioty z losowych puli przedmiotów#Tylko jeden może zostać podniesiony"},
+	{"The Lost", "Zaginiony", "Zapobiega pojawianiu się przedmiotów bez benefitowych dla Losta#Przykłady: Przedmioty dające tylko zdrowie, latnie i/lub spektralne strzały lub aktywujące  się po otrzymaniu obrażeń"},
+	{"Lazarus Risen", "Powstały Łazarz", "↑ {{Damage}} +7.2 Obrażeń#Zwiększone obrażenia znikają po 60 sekundach#Zabijanie wrogów, gdy efekt jest aktywny, przedłuża go#Efekt uruchamia się za każdym razem, gdy Łazarz odradza się jako Łazarz Powstały"},
+	{"Black Judas", "Czarny Judasz", "{{Collectible34}} Księga Beliala staje się przedmiotem pasywnym podobnym do {{Collectible584}} Księgi płomieni #{{Collectible34}} Przyznaje Księgę Beliala, jeśli Judasz nie jest w jej posiadaniu#↑ {{Obrażenia}} Przyznawane przez nią zwiększenie obrażeń skaluje się wraz z liczbą ładunków aktywnego przedmiotu w połączeniu z nią##Daje specjalne efekty niektórym aktywnym przedmiotom"},
+	{"Lilith", "Lilit", "Familiary są ustawiane na wprost Lilit"},
+	{"Keeper", "Dozorca", "↑ {{CoinHeart}} +1 Zdrowie#Maksymalna liczba pojemników z Monetowym Sercem zostaje zwiększona do 4"},
+	{"Apollyon", "Apollyon", "{{Collectible477}} Użycie Pustki daje szansę na odrodzenie się przedmiotu, który został wcześniej zjedzony#Nie usuwa premii do statystyk#Im więcej zjedzonych przedmiotów, tym większa szansa na odrodzenie się przedmiotu po użyciu"},
+	{"The Forgotten", "Zapomniany", "Dusza nie posiada łańucucha i swobodnie się porusza"},
+	{"The Forgotten Soul", "Dusza Zapomnianego", "Dusza nie posiada łańucucha i swobodnie się porusza"},
+	{"Bethany", "Betania", "Aktywowanie przedmiotu za pomocą ładunków duszy jest czasami darmowe"},
+	{"Jacob", "Jakub", "Postać która podniosła przedmiot otrzymuje kopie trzech przedmiotów pasywnych drugiej postaci"},
+	{"Esau", "Ezaw", "Postać która podniosła przedmiot otrzymuje kopie trzech przedmiotów pasywnych drugiej postaci"},
+	{"Tainted Isaac", "Splamiony Izaak", "Dodaje 4 miejsca na przedmioty pasywne# Sam nie zużywa miejsca"},
+	{"Tainted Magdalene", "Splamiona Magdalena", "Dodaje jedno czerwone serce które nie zanika"},
+	{"Tainted Cain", "Splamiony Kain", "Ilość pickupów pojawianych z dotykania przedmiotów jest podwojona"},
+	{"Tainted Judas", "Splamiony Judasz", "{{Collectible705}} Zwiększa zasięg, w jakim Mroczne Techniki trafia wrogów i ich pociski"},
+	{"Tainted ???", "Splamiony ???", "Zwiększa maksymalny limit trzymanych kup do 29"},
+	{"Tainted Eve", "Splamiona Ewa", "{{HalfHeart}} Zakrzepy Czerwonego Serca generują połówki Czerwonych Serc po śmierci, które znikają po 2 sekundach."},
+	{"Tainted Samson", "Splamiony Samson", "Czas berserkera jest wydłużony o 3 sekundy zamiast jedną gdy splamiony samson zabije przeciwnika"},
+	{"Tainted Azazel", "Splamiony Azazel", "Podwaja wielkość ataku Kichnięcia krwią {{Collectible726}} Splamionego azazela"},
+	{"Tainted Lazarus", "Splamiony Łazarz", "Nieaktywna forma Splamionego Lazarusa pojawia się jako widmowa druga postać#Jest nietykalny i zadaje 25% obrażeń#Obydwie formy otrzymują Birthrighta"},
+	{"Tainted Eden", "Splamiony Eden", "Żadne przedmioty zdobyte przed Birthrightem nie mogą już zostać ponownie przetasowane#Aktywne przedmioty mogą zostać ponownie przetasowane, jeśli zostaną upuszczone i podniesione."},
+	{"Tainted Lost", "Splamiony Zaginiony", "Dodatkowe życie odradzające splamionego Zaginionego w tym samym pokoju i zadające pobliskim przeciwnikom 200 pkt obrażeń#Może trafić tego samego przeciwnika kilka razy"},
+	{"Tainted Lilith", "Splamiona Lilit ", "{{Collectible728}} Familiary, które normalnie podążają za Splamiona Lilit, zamiast tego podążają za jej Gello# Atak w zwarciu otrzymuje +3 obrażenia za każdego familiara"},
+	{"Tainted Keeper", "Splamiony Dozorca", "{{Coin}} Mocno przyciąga do postaci monety pojawione poprzez zabijanie przeciwników#Brak efektu dla innych monet"},
+	{"Tainted Apollyon", "Splamiony Apollyon", "Szarańcza nieustannie zadaje obrażenia wrogom, nie powracając po przytrzymaniu przycisku strzału."},
+	{"Tainted Forgotten", "Splamiony Zapomniany", "Dusza zyskuje możliwośc przywołania {{Collectible705}}, która pomaga podnieśc ciało Zapomnianego z dystansu#Dusza jest nietykalna, podczas gdy Zapomniany wraca"},
+	{"Tainted Bethany", "Splamiona Betania", "Pojawiają się cztery losowe wispy przedmiotów o jakości {{Quality3}} i {{Quality4}} ze znacznie wyższymi PŻ niż normalnie"},
+	{"Tainted Jacob", "Splamiony Jakub", "Mroczny Ezaw rozdziela się na dwie części, tworząc swojego cienistego klona#Oba Ezawy ładują się zawsze w tym samym czasie#{{Collectible722}} Czas odnowienia Anima Sola zostaje skrócony do 10 sekund#Użycie Anima Sola łączy oba Ezausy na 6,67 sek."},
+	{"Dead Tainted Lazarus", "Marwy Splamiony Łazarz", "Nieaktywna forma Splamionego Lazarusa pojawia się jako widmowa druga postać#Jest nietykalny i zadaje 25% obrażeń#Obydwie formy otrzymują Birthrighta"},
+	{"Tainted Jacob 2", "Splamiony Jakub 2", ""},
+	{"Tainted Forgotten Soul", "Splamiona Dusza Zapomnianego", "Dusza zyskuje możliwośc przywołania {{Collectible705}}, która pomaga podnieśc ciało Zapomnianego z dystansu#Dusza jest nietykalna, podczas gdy Zapomniany wraca"},
+}
+
+---------- Glitched Item Descriptions ----------
+
+EID.descriptions[languageCode].GlitchedItemText = {
+	-- Item Config info
+	AddBlackHearts = "{{BlackHeart}} {1} Black Heart",
+	AddBombs = "{{Bomb}} {1} Bomb",
+	AddCoins = "{{Coin}} {1} Coin",
+	AddHearts = "{{HealingRed}} Heals {1} heart",
+	AddKeys = "{{Key}} {1} Key",
+	AddMaxHearts = "{{EmptyHeart}} {1} Heart container",
+	AddSoulHearts = "{{SoulHeart}} {1} Soul Heart",
+
+	-- Cache Flag names
+	cacheFlagStart = "May affect ",
+	[0] = "{{Damage}} Damage", "{{Tears}} Fire rate", "{{Shotspeed}} Shot speed", "{{Range}} Range", "{{Speed}} Speed", "Tear effects", "Tear color", "Flight", "Attack type", "Familiars", "{{Luck}} Luck", "Size", "Color", "Chest contents", [16] = "All stats",
+
+	-- Attribute triggers
+	active = "On use:#",
+	pickup_collected = "On collecting a pickup:#",
+	enemy_kill = "Killing an enemy has a 20% chance to:#",
+	damage_taken = "Upon taking damage:#",
+	entity_spawned = "When a {T1} is spawned:#",
+	tear_fire = "Firing a tear has a 5% chance to:#",
+	enemy_hit = "Hitting an enemy has a 5% chance to:#",
+	room_clear = "On clearing a room:#",
+	chain = " Then:{{CR}} ",
+
+	-- Attribute effects
+	area_damage = "Deal {1} damage in {2} tiles around Isaac",
+	add_temporary_effect = "Grant {1} for the room",
+	convert_entities = "Convert all {1} in the room to {2}",
+	use_active_item = "Use {1}",
+	spawn_entity = "Spawn a {1}",
+	fart = "Fart on {1} tiles around Isaac",
+
+	-- Generic entity names not obtained from entities2.xml
+	-- This could also be a place to localize entity names; this table is read from before EID.XMLEntityNames
+	["4.-1"] = "lit bomb",
+	["5.0"] = "pickup",
+	["5.10"] = "heart",
+	["5.20"] = "coin",
+	["5.30"] = "key",
+	["5.40"] = "bomb pickup",
+	["5.69"] = "sack",
+	["5.70"] = "pill",
+	["5.90"] = "battery",
+	["5.300"] = "card",
+	["5.301"] = "rune", -- not a real ID
+	["9.-1"] = "enemy projectile",
+	["999.-1"] = "grid object",
+	["1000.0"] = "effect",
+
+	-- Text for the base item that is granted
+	grants = "Grants ",
+}
+
+---------- Bag of Crafting Text ----------
 EID.descriptions[languageCode].CraftingBagContent = "torbie:"
 EID.descriptions[languageCode].CraftingRoomContent = "pokoju:"
+EID.descriptions[languageCode].CraftingFloorContent = "Floor:"
+EID.descriptions[languageCode].CraftingSearch = "Search:"
+EID.descriptions[languageCode].CraftingBagQuality = "Bag Quality:"
+EID.descriptions[languageCode].CraftingBestQuality = "Best Quality:"
+EID.descriptions[languageCode].CraftingHideKey = "Hide:"
+EID.descriptions[languageCode].CraftingPreviewKey = "Preview:"
+-- {1} will be converted to the number of recipes
+EID.descriptions[languageCode].CraftingMore = "...+{1} more"
+-- {1} will be converted into the number of available items
+EID.descriptions[languageCode].CraftingNumAvailableItems = "{1} of 8 items available"
+EID.descriptions[languageCode].CraftingWarningAvailableItems = "Needs at least 8 to show crafting recipes!"
+-- {1} will be converted into the name of the key that toggles the BoC visibility
+EID.descriptions[languageCode].CraftingIsHidden = "Currently Hidden (Unhide with {1})"
 EID.descriptions[languageCode].CraftingResults = "Wyniki:#(Przewiń: Trzymaj TAB + Strzał △/▽)"
-EID.descriptions[languageCode].CraftingBagModError = "!!! {{ColorRed}}BŁĄD:#{{ColorRed}}Ta funkcja nie wspiera obecnie zmodowanych przedmiotów"
 
+-- Strings for Tainted Cain's pedestal salvaging; the non-base lines will have the corresponding icon automatically
+EID.descriptions[languageCode].TaintedCainPedestalBase = "Turns into 3-8 random pickups on touch"
+EID.descriptions[languageCode].TaintedCainPedestalBaseBirthright = "Turns into {{BlinkBirthright}}6-16{{CR}} random pickups on touch"
+EID.descriptions[languageCode].TaintedCainPedestalGuaranteed = "Guaranteed to spawn a{n} {1}" -- Room type spawns
+EID.descriptions[languageCode].TaintedCainPedestalBonus = "33% chance for a bonus {1}" -- "Safety Cap" type spawns
+EID.descriptions[languageCode].TaintedCainPedestalLuckyToe = "66% chance for a bonus pickup"
+EID.descriptions[languageCode].TaintedCainPedestalLuckyToeBirthright = "66% chance for {{BlinkBirthright}}2{{CR}} bonus pickups"
+EID.descriptions[languageCode].TaintedCainPedestalDaemonsTail = "Hearts are 80% less likely"
+
+
+---------- Misc. Text ----------
+
+EID.descriptions[languageCode].ResultsWithX = "(Results with {1})"
+EID.descriptions[languageCode].VariableCharge = "{1} charge:"
+
+EID.descriptions[languageCode].poopSpells = {
+	{"Poop", "Normal poop that can drop pickups"},
+	{"Corny Poop", "Spawns blue flies while intact"},
+	{"Burning Poop", "Deals contact damage while intact#Leaves a fire behind when destroyed"},
+	{"Stone Poop", "Can deal damage 3 times when thrown#Takes a lot of hits to destroy"},
+	{"Stinky Poop", "Emits a toxic cloud#{{Warning}} The cloud explodes if it touches fire!"},
+	{"Black Poop", "{{Slow}} Creates slowing creep#{{Confusion}} Deals 10 damage and confuses all enemies when destroyed"},
+	{"Holy Poop", "{{Collectible543}} Create a white poop#While inside the poop's aura:#↑ {{Damage}} x1.2 Damage multiplier#↑ {{Tears}} x2.5 Fire rate multiplier#Homing tears#Chance to block damage"},
+	{"Brown Creep", "Leave a trail of creep#Standing on the creep increases Isaac's fire rate and damage#If the creep is touching other poops, it gains their attribute"},
+	{"Fart", "Push nearby enemies and bullets back, and spawn a toxic cloud#{{Warning}} The cloud explodes if it touches fire!"},
+	{"Bomb", "Normal throwable bomb"},
+	{"Explosive Diarrhea", "Isaac quickly spawns 5 lit bombs"},
+}
+
+EID.descriptions[languageCode].itemPoolFor = "Pool for Item:"
+EID.descriptions[languageCode].itemPoolNames = {
+	[0] = "Treasure", "Shop", "Boss", "Devil", "Angel", "Secret", "Library", "Shell Game", "Golden Chest", "Red Chest", "Beggar", "Demon Beggar", "Curse", "Key Master", "Battery Bum", "Mom's Chest", "Greed Treasure", "Greed Boss", "Greed Shop", "Greed Devil", "Greed Angel", "Greed Curse", "Greed Secret", "Crane Game", "Ultra Secret", "Bomb Bum", "Planetarium", "Old Chest", "Baby Shop", "Wooden Chest", "Rotten Beggar",
+}
+
+EID.descriptions[languageCode].VoidShopText = "If absorbed right after pickup, gain:"
+EID.descriptions[languageCode].VoidOptionText = " will be absorbed instead"
+EID.descriptions[languageCode].VoidNames[2] = "{1} Fire rate"
+
+EID.descriptions[languageCode].PurityBoosts = {[0] = "↑ {{Damage}} +4 Damage", "↑ {{Tears}} +2 Fire rate", "↑ {{Speed}} +0.5 Speed", "↑ {{Range}} +3 Range"}
+
+EID.descriptions[languageCode].spindownError = "Item disappears"
+
+EID.descriptions[languageCode].BlankCardEffect = "Blank Card effect:"
+
+EID.descriptions[languageCode].FlipItemToggleInfo = "(Hold {{CONFIG_BoC_Toggle}} to show description)"
+EID.descriptions[languageCode].GlitchedCrownToggleInfo = "(Press {{CONFIG_BoC_Toggle}} to show next description: {1})"
+
+EID.descriptions[languageCode].GlowingHourglassTransformed = "Will change back to Glowing Hourglass next floor"
+
+EID.descriptions[languageCode].FalsePHDHeart = "Spawns 1 {{BlackHeart}} Black Heart"
+EID.descriptions[languageCode].FalsePHDDamage = "↑ {{Damage}} +0.6 Damage"
+EID.descriptions[languageCode].FalsePHDHorseDamage = "↑ {{Damage}} +1.2 Damage"
+
+EID.descriptions[languageCode].ExperimentalPillPHD = "No stat decrease"
+EID.descriptions[languageCode].ExperimentalPillFalsePHD = "No random stat increase"
+
+EID.descriptions[languageCode].PandorasBoxStrangeKeyEffect = "Instead, consumes the key and spawns 6 items from random pools"
+
+EID.descriptions[languageCode].AchievementWarningTitle = "{{ColorYellow}}{{Warning}} WARNING {{Warning}}"
+EID.descriptions[languageCode].AchievementWarningText = "Achievements are disabled!#In order to enable progression and achievements, you first need to kill Mom (Depths II) without any mods enabled.#(If you've defeated Mom, this message is a bug and can be ignored)#(This warning can be disabled in the config)"
+EID.descriptions[languageCode].OldGameVersionWarningText = "EID is updated for the newest Steam version#Your game version is not officially supported, so some descriptions and features will be inaccurate#(This warning can be disabled in the config)"
+EID.descriptions[languageCode].ModdedRecipesWarningText = "Modded items could make the crafting recipe calculation inaccurate!#Install REPENTOGON for improved modded recipe support#(This warning can be disabled in the config)"
+
+
+-- Conditional descriptions - DO NOT TRANSLATE THE FIRST PART IN ["BRACKETS"]
+-- Strings will be appended to the original description
+-- Tables with one entry will completely replace the original description
+-- Tables with two or more entries are find-replace pairs (if there's an odd number of entries, the last entry is appended)
+-- For collectible/player conditionals, lines will automatically have their bulletpoint, and {1} is replaced with their name
+local repConditions = {
+	------ GENERAL STRINGS ------
+	["Tainted Revive"] = "{1} simply revives",
+	["Ice Tears"] = "Freezing an enemy doesn't count as killing", -- Uranus Anti-Synergy
+	
+	------ GREED MODE ------
+	["5.100.344"] = {"{{BlackHeart}} +1 Black Heart#{{Bomb}} Spawns 3 bombs"}, -- Match Book (Greed)
+	["5.300.74"] = {"Teleports Isaac to the first room of the floor"}, -- The Moon? (Greed)
+	["5.100.416"] = {"{{Coin}} Increases the coin cap to 999"}, -- Deep Pockets (Greed)
+	["5.100.566"] = {"{{HalfSoulHeart}} +1 half Soul Heart when entering a new floor#!!! The stage transition nightmare shows the wrong items in Greed Mode"}, -- Dream Catcher (Greed)
+	["5.100.580"] = "{{GreedMode}} Can only rarely make special rooms in Greed Mode#{{SuperSecretRoom}} Can still help find the Super Secret Room", -- Red Key (Greed)
+	["5.300.83"] = "{{GreedMode}} Can only rarely make special rooms in Greed Mode#{{SuperSecretRoom}} Can still help find the Super Secret Room", -- Soul of Cain (Greed)
+	["5.100.514"] = {"Causes some enemies and projectiles to briefly pause at random intervals#Paused projectiles disappear"}, -- Broken Modem (Greed)
+	["5.350.162"] = {"{{Player7}} Clearing a wave has a 50% chance to turn the player into Azazel#{{Timer}} Effect lasts until clearing another wave"}, -- Azazel's Stump (Greed)
+	
+	
+	------ ACHIEVEMENT CHECKS ------
+	-- todo...
+	
+	
+	------ SPECIFIC CHARACTER SYNERGIES/CHANGES ------
+	["5.100.642"] = {"!!! SINGLE USE !!!#Spawns an item from the current room's item pool"}, -- Magic Skin + Lost
+	["5.100.240"] = "{1} keeps the stat changes when he drops it", -- Experimental Treatment + Tainted Isaac
+	["5.100.644"] = "{1} keeps the stat increase when he drops it", -- Consolation Prize + Tainted Isaac
+	["5.100.549"] = {"↑ {{Tears}} +0.4 Fire rate"}, -- Brittle Bones (Keeper+Lost)
+	["5.100.694"] = "Works for {1}, letting him survive 4 hits", -- Heartbreak + Losts
+	["5.100.694 (Keeper)"] = {"↑ {{Damage}} +0.25 Damage for each Broken Heart#{{BrokenHeart}} +1 Broken Heart#{{BrokenHeart}} Every fatal hit grants +1 Broken Heart#{{Warning}} Keeper dies at 3 Broken Hearts"}, -- Heartbreak + Normal Keeper
+	["5.100.694 (Tainted Keeper)"] = {"{{Warning}} {1} will die in one hit after taking this item#↑ {{Damage}} +0.25 Damage for each Broken Heart#{{BrokenHeart}} +1 Broken Heart#{{BrokenHeart}} Every fatal hit grants +1 Broken Heart#Tainted Keeper dies at 2 Broken Hearts"}, -- Heartbreak + Tainted Keeper
+	["5.100.501"] = "{1} can gain additional coin containers#Health up items can grant an extra container per 25 coins", -- Greed's Gullet + Keeper
+	["5.100.188"] = "Deals 7.5 damage as {1}", -- Cain + Abel
+	["5.100.360"] = "Deals 100% damage as {1}", -- Lilith + Incubus
+	["5.100.728"] = "Deals 100% damage as {1}", -- Lilith + Gello
+	["5.100.230 (Keeper)"] = "{1} is left with 1 coin container", -- Abaddon
+	["5.100.230 (Bethany)"] = "{1} is left with half a heart", -- Abaddon
+	["5.100.230 (Tainted Bethany)"] = "{1} doesn't lose her blood charges", -- Abaddon
+	["5.100.245 (Keeper)"] = {"↑ {{Tears}} Increased tear rate#↑ Decreased tear spread#↓ {{Damage}} x0.8 Damage multiplier"}, -- 20/20 + Keeper
+	["5.100.205 (Tainted Magdalene)"] = "Allows infinite usage of Yum Heart", -- Sharp Plug + Tainted Magdalene
+	
+	["5.100.705"] = "Temporary +1 damage up for each bullet/enemy", -- Dark Arts + Dark/Tainted Judas
+	["5.100.722"] = {"Chains down Dark Esau#After 5 seconds or upon using Anima Sola again, he breaks free and dashes towards Jacob"}, -- TJacob + Anima Sola
+	["5.100.713"] = {"Recalls all clots to Eve's health bar#Excess clots are simply moved to her location#{{Timer}} 1 second recharge time"}, --Teve + Sumptorium
+	["5.100.711"] = {"Entering", "{{Player38}} Flips Lazarus to the other state#Entering"}, -- Tlaz + Flip
+	["5.100.710"] = {"Upon use, attacking swipes the bag in the chosen direction#Swiping at a pickup puts it in the bag#The Bag's contents can be shifted with {{ButtonRT}} to replace specific pickups when full#Holding the Use key when the bag is full crafts the previewed item#Item quality is based on the quality of the pickups"}, -- Tcain Bag of Crafting
+	
+	["Mother's Kiss Soul"] = {"{{SoulHeart}} +1 Soul Heart while held"},
+	["Mother's Kiss Bone"] = {"{{BoneHeart}} +1 Bone Heart while held"},
+	["Mother's Kiss Coin"] = {"{{CoinHeart}} +1 Coin Heart while held#Increases Coin Heart cap by 1"},
+	
+	-- Vibrant/Dim Bulb
+	["5.350.100 (Bethany)"] = "Works with {1}'s soul charges",
+	["5.350.100 (Tainted Bethany)"] = "Works with {1}'s blood charges",
+	["5.350.101 (Bethany)"] = "Ignores {1}'s soul charges",
+	["5.350.101 (Tainted Bethany)"] = "Ignores {1}'s blood charges",
+	["Health Up Soul Charges"] = "+{1} soul charges",
+	["Health Up Blood Charges"] = "+{1} blood charges",
+	
+	-- Tainted Bethany stuff
+	["2 of Hearts Blood Charges"] = "Doubles {1}'s blood charges",
+	["Vampire Blood Charges"] = {"↑ {{Damage}} +0.3 Damage#Killing 13 enemies adds 1 blood charge"},
+	["Fork Blood Charges"] = {"Clearing a room has a 10% chance to add 1 blood charge"},
+	["Stem Cell Blood Charges"] = {"Entering a new floor adds 1 blood charge"},
+	
+	["Salvaging Bonus"] = {"and destroyed machines", "destroyed machines, and salvaged items"},
+	["Salvaging Lucky Toe"] = "66% chance for an extra pickup from salvaged items",
+	
+	
+	------ DUPLICATE COPIES OF ITEMS ------
+	["5.100.2 (Copies)"] = "Isaac fires 1 more tear#No additional stat decrease", -- The Inner Eye
+	["5.100.153 (Copies)"] = "Isaac fires 2 more tears#No additional stat decrease", -- Mutant Spider
+	["5.100.245 (Copies)"] = "Isaac fires 1 more tear#No additional stat decrease", -- 20/20
+	["5.100.358 (Copies)"] = "Isaac fires 1 more tear in the center", -- The Wiz
+	["5.100.64 (Copies)"] = "Owning this item multiple times reduces the price further", -- Steam Sale
+	["5.100.118 (Copies)"] = "Multiple Brimstones grant increased damage and a larger beam", -- Brimstone
+	["5.100.531 (Copies)"] = "Additional copies only give +1 damage", -- Haemolacria
+	["5.100.224 (Copies)"] = "Additional copies only give +0.5 fire rate", -- Cricket's Body
+	
+	
+	----- MISC. ITEM CONDITIONS ------
+	["Sacrificial Nugget"] = "Turns Brown Nugget turrets into coins",
+	["Sacrificial Item Wisps"] = "Familiars created by Lemegeton can be sacrificed#Turns all Lemegeton wisps into {{HalfSoulHeart}} half Soul Hearts",
+	["Sacrificial Plum"] = "The summoned Plum counts as a familiar, and doesn't remove Plum Flute",
+	["Sacrificial Quints"] = "If a Quints familiar is sacrificed, you lose Quints",
+	["Sacrificial Abyss"] = "Abyss Locusts count as familiars",
+	["Sacrificial Star"] = "Star of Bethlehem counts as a familiar",
+	["Sacrificial Clots"] = "Turns Clots into coins",
+	
+	["1000.76.1"] = "{{Warning}} Only rerolls the character that activates the dice", -- Dice Room 1 (Co-op)
+	["1000.76.6"] = "{{Warning}} All characters' items will be rerolled in co-op!", -- Dice Room 6 (Co-op)
+	["5.100.45"] = "Heals other players for half a heart", -- Yum Heart (Co-Op)
+	["5.350.125"] = "Beams also arc between players", -- Extension Cord (Co-Op)
+	
+	["5.100.245"] = "Removes the fire rate penalty of {1}", -- 20/20 + Mutant Spider, The Inner Eye, Polyphemus
+	["20/20"] = "No fire rate penalty with {1}", -- 20/20 + Mutant Spider, The Inner Eye, Polyphemus
+	
+	["5.100.135 (Hard Mode)"] = {"1-2 coins", "1 coin", "2-3 coins", "2 coins"}, -- IV Bag Hard Mode (modify the PHD text too)
+	["5.100.201"] = "Refills {1}'s charge on pickup", -- Iron Bar + Notched Axe
+	["5.350.172"] = "{1} removes the teleportation effect", -- Cursed Penny + Black Candle
+	["5.100.501 (Deep Pockets)"] = "+1 container for every 100 coins past 99", -- Greed's Gullet + Deep Pockets
+	["? Card Single Use"] = "Single use items can be used multiple times with ? Card", -- Single Use Actives + ? Card
+	["Both Peppers"] = "With {1}, base chance to shoot a flame is 12.5%, up to 100% at 7 luck", -- Ghost Pepper + Bird's Eye
+	["Black Feather"] = "↑ {{Damage}} +0.5 Damage", -- Black Feather items
+	["Hemoptysis"] = "Works with {1}", -- Hemoptysis + Brimstone items
+	["5.100.600"] = "x1.2 Fire rate multiplier for {1}", -- Eye Drops (items and some players)
+	["5.100.482"] = "Tainted characters change into other tainted characters", -- Clicker
+	
+	["4.5 Volt Timed"] = "No effect on timed recharges", -- 4.5 Volt + Timed Recharges
+	["4.5 Volt Multiple"] = "Secondary active items only gain charge if the primary active is fully charged", -- 4.5 Volt + Schoolbag/Pocket Actives
+	["Bulb Zero"] = "Actives with 0 max charges don't count", -- Vibrant/Dim Bulb + zero charge actives
+	
+	["Brimstone Proptosis"] = "Beams deal 6x damage at point blank range, decreasing with distance",
+	["Brimstone Ipecac"] = "The laser gets +2 damage and explodes on enemies and obstacles",
+	["Brimstone Pop!"] = "Shorter beam that shoots {1} tears at the end",
+	["Eye of Belial Dr. Fetus"] = "Bombs pierce, doing 2.5x damage, but don't home or do additional blast damage",
+	["Spirit Sword C Section"] = "{1} has priority#Fetuses hold swords and do spin attacks",
+	["Spirit Sword Mom's Knife"] = "{1} has priority#The spin attack throws the sword forward",
+	["Spirit Sword Technology"] = "The sword becomes a lightsaber that can reflect enemy shots",
+	["Spirit Sword Ipecac"] = "The sword gets +6 damage and poisons but doesn't explode#Sword beams do explode",
+	["Ludovico Ipecac"] = "The tear gets +2 damage but doesn't explode or poison",
+	["Technology Ipecac"] = "The laser gets +2 damage and explodes on targets",
+	["Eye of the Occult Beam"] = "Isaac automatically shoots with a crosshair that alters the beam's path",
+	
+	["Lullaby Clots"] = "(Including clots)",
+	["Lullaby Incubus"] = "(Including Incubus)",
+	
+	-- Jacob's Ladder / 120 Volt battery synergies
+	["Sparks Damage"] = "Sparks deal 50% more damage",
+	["Sparks Arc Length"] = "Sparks have longer arc distance",
+	["Sparks Arc Count"] = "Sparks can arc to 2 more enemies",
+	["Sparks Arc Back"] = "Sparks can arc back to the same enemy",
+	
+	["White Poop Jar"] = "Spawns White Poop on 1 charge use",
+	["Golden Poop Jar"] = "Chance to spawn Golden Poop on 1 charge use",
+	
+	["Binge Eater Healing"] = {"Heals 1 heart", "Heals {{BlinkGreen}}2{{CR}} hearts", "+4 blood charges", "+{{BlinkGreen}}6{{CR}} blood charges"},
+}
+EID:updateDescriptionsViaTable(repConditions, EID.descriptions[languageCode].ConditionalDescs)
 
 -- If Debug enabled, add overwrite tables to the languagepack in order for the language completion script to be able to compare them
 if EID.enableDebug then
