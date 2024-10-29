@@ -574,6 +574,134 @@ EID.descriptions[languageCode].bookOfVirtuesWisps = {
 	[729] = "Single room stationary wisp", -- Decap Attack
 }
 
+-- Special Locust effects when Item was eaten by Abyss
+EID.descriptions[languageCode].abyssSynergies = {
+	[2] = "Three normal locusts", -- The Inner Eye
+	[3] = "Purple homing locust", -- Spoon Bender
+	[4] = "Red large locust that deals triple damage", -- Cricket's Head
+	[6] = "Yellow fast short range locust that deals damage more quickly", -- Number One
+	[7] = "Red locust that deals double damage", -- Blood of the Martyr
+	[10] = "Two gray locusts that deal half damage", -- Halo of Flies
+	[13] = "Green locust that poisons enemies", -- The Virus
+	[103] = "Green locust that poisons enemies", -- The Common Cold
+	[118] = "Gray larger locust that is otherwise normal", -- Brimstone
+	[149] = "Large, slow, green locust that deals 1.5x Isaac's damage and poisons enemies", -- Ipecac
+	[153] = "Four normal locusts", -- Mutant Spider
+	[257] = "Orange, burning locust that sets enemies on fire", -- Fire Mind
+	[305] = "Green locust that poisons enemies", -- Scorpio
+	[374] = "Cyan, glowing locust that can spawn beams of light that deal deal 3x Isaac's damage", -- Holy Light
+	[494] = "Light blue locust with arcs of electricity that deal 0.1 damage per arc", -- Jacob's Ladder
+	[559] = "Light blue locust with arcs of electricity that deal 0.1 damage per arc", -- 120 Volt
+}
+
+-- Effect of Car battery on Active Items
+local repCarBattery = {
+	[34] = {2, 3}, -- The Book of Belial
+	[59] = {2, 3}, -- The Book of Belial (Birthright)
+	[83] = {" Half", "1"}, -- The Nail
+	[263] = "Triggers it twice", -- Clear Rune
+	[283] = {1, 2, "pickup", "{{CR}}pickups"}, -- D100
+	[285] = "Devolves enemies twice", -- D10
+	[288] = {"4-8", "8-16"}, -- Box of Spiders
+	[293] = {200, 400}, -- Head of Krampus
+	[296] = {1, 2, " Heart", " {{CR}}Hearts", 1, 2, "container", "{{CR}}containers"}, -- Converter
+	[323] = "The tears deal double damage", -- Isaac's Tears
+	[386] = "Increased chance for rare obstacles", -- D12
+	[485] = "25% chance to quadruple, 75% chance to remove", -- Crooked Penny
+	[489] = "Uses the selected dice twice", -- D Infinity
+	[522] = {3, 6}, -- Telekinesis
+	[557] = {"one", "two"}, -- Fortune Cookie
+	[582] = "Triggers twice", -- Wavy Cap
+	[584] = "Spawns two wisps", -- Book of Virtues
+	[605] = {" a ", " 2 ", "familiar", "{{CR}}familiars"}, -- The Scooper
+	[609] = {25, 44}, -- Eternal D6
+	[611] = "Triggers an additional 1-charge scream", -- Larynx
+	[625] = {30, 60}, -- Mega Mush
+	[631] = {25, 50}, -- Meat Cleaver
+	[635] = "Instantly swaps twice#Great for teleporting into enemies, but can't collect out-of-reach items", -- Stitches
+	[639] = {1, 2, " Heart", " {{CR}}Hearts"}, -- Yuck Heart
+	[642] = "Triggers twice", -- Magic Skin
+	[650] = {" a ", " 2 ", "Plum", "{{CR}}Plums"}, -- Plum Flute
+	[685] = "Spawns double the wisps, but the use count only goes up by 1", -- Jar of Wisps
+	[687] = {" a ", " 2 ", "monster", "{{CR}}monsters"}, -- Friend Finder
+	[704] = "Lasts 10 seconds, but killing an enemy caps time remaining at 5 seconds max", -- Berserk!
+	[705] = {1, 2}, -- Dark Arts
+	[712] = {" an ", " 2 ", "orbital", "{{CR}}orbitals"}, -- Lemegeton
+	[713] = {"half a heart", "a heart", "a clot", "2 {{CR}}clots"}, -- Sumptorium
+	[719] = {" a ", " 2 ", "item/pickup", "{{CR}}items/pickups"}, -- Keeper's Box
+	[720] = "Spawns a poop alongside the pickup", -- Everything Jar
+	[722] = "Chains 2 enemies down#If there's only one enemy, chains it for 10 seconds#Using Anima Sola again unchains the closest enemy", -- Anima Sola
+	[723] = {"one", "two"}, -- Spindown Dice
+}
+EID:updateDescriptionsViaTable(repCarBattery, EID.descriptions[languageCode].carBattery)
+
+-- Effect of BFFS!/Hive Mind on Familiars
+local repBFFSSynergies = {
+	["5.100.67"] = {6, 12}, -- Sister Maggy
+	["5.100.98"] = {"7-8", "6"}, -- The Relic
+	["5.100.107"] = {23.5, 47}, -- The Pinking Shears
+	["5.100.172"] = {112.5, 225}, -- Sacrificial Dagger
+	["5.100.178"] = {7, 14, "Spawns a blue flame at point of impact"}, -- Holy Water
+	["5.100.206"] = {56, 112}, -- Guillotine
+	["5.100.264"] = {6.5, 13}, -- Smart Fly
+	["5.100.272"] = {100, 125}, -- BBF
+	["5.100.273"] = {100, 125}, -- Bob's Brain
+	["5.100.274"] = {150, 300}, -- Best Bud
+	["5.100.275"] = {24, 48}, -- Lil Brimstone
+	["5.100.276"] = "Fires additional shots in random directions and leaves a larger puddle of creep", -- Isaac's Heart
+	["5.100.319"] = {75, 150}, -- Cain's Other Eye
+	["5.100.320"] = {15, 30}, -- ???'s Only Friend
+	["5.100.360"] = {75, 150, 100, 200}, -- Incubus (+ Lilith exception)
+	["5.100.365"] = {30, 60}, -- Lost Fly
+	["5.100.384"] = {"5-20", "10-40"}, -- Lil Gurdy
+	["5.100.389"] = {"7-8", "6"}, -- Rune Bag
+	["5.100.467"] = {10, 20}, -- Finger!
+	["5.100.468"] = {75, 150}, -- Shade
+	["5.100.491"] = {"7", "6"}, -- Acid Baby
+	["5.100.500"] = {"7-8", "6"}, -- Sack of Sacks
+	["5.100.504"] = {3.5, 7}, -- Brown Nugget
+	["5.100.508"] = {1.5, 3}, -- Mom's Razor
+	["5.100.509"] = {3.5, 7, 20, 40}, -- Bloodshot Eye
+	
+	["5.100.565"] = "Double damage while friendly", -- Blood Puppy
+	["5.100.569"] = "If triggered, grants additional damage and speed", -- Blood Oath
+	["5.100.575"] = {1.5, 3}, -- The Intruder
+	["5.100.581"] = {15, 30}, -- Psy Fly
+	["5.100.584"] = "Doubles wisp tear and contact damage", -- Book of Virtues
+	["5.100.605"] = {36, 72}, -- The Scooper
+	["5.100.607"] = {3.5, 7, 5.25, 10.5}, -- Boiled Baby
+	["5.100.608"] = {3.5, 7}, -- Freezer Baby
+	["5.100.610"] = {45, 90, "a rock wave", "4 {{CR}}rock waves", 6.5, 13}, -- Bird Cage
+	["5.100.612"] = "Gives the Lost Soul a Holy Mantle effect", -- Lost Soul
+	["5.100.626"] = {25, 50}, -- Knife Piece 1
+	["5.100.627"] = {25, 50}, -- Knife Piece 2
+	["5.100.629"] = {3, 6}, -- Bot Fly
+	["5.100.635"] = "On use, shoots 8 tears from the player's position", -- Stitches
+	["5.100.645"] = {3.5, 7}, -- Tinytoma
+	["5.100.649"] = {3, 6, 2, 4}, -- Fruity Plum
+	["5.100.650"] = "Contact damage doubled", -- Plum Flute
+	["5.100.652"] = {17.5, 35}, -- Cube Baby
+	["5.100.655"] = {10.5, 21, "No BFFS! bonus damage for any familiar while Spin to Win is being used"}, -- Spin to Win
+	["5.100.679"] = {52.5, 105}, -- Lil Abaddon
+	["5.100.681"] = "Damage doubled", -- Lil Portal
+	["5.100.682"] = {8, 16}, -- Worm Friend
+	["5.100.685"] = "Doubles wisp tear and contact damage", -- Jar of Wisps
+	["5.100.698"] = {37.5, 75}, -- Twisted Pair
+	["5.100.702"] = "Doubles wisp tear and contact damage", -- Vengeful Spirit
+	["5.100.706"] = "Locust damage is increased by 25%", -- Abyss
+	["5.100.712"] = "Doubles orbital contact damage", -- Lemegeton
+	["5.100.713"] = "Clot damage is doubled", -- Sumptorium
+	["5.100.728"] = {75, 150, 100, 200}, -- Gello (+ Lilith exception)
+	
+	["5.300.96"] = "Doubles wisp tear and contact damage", -- Soul of Bethany
+	["5.350.142"] = "Doubles wisp tear and contact damage", -- Beth's Faith
+	["5.350.182"] = "Doubles wisp tear and contact damage", -- Beth's Essence
+	["5.350.176"] = "Clot damage is doubled", -- Lil Clot
+	["5.350.186"] = "Locust damage is increased by 25%", -- Apollyon's Best Friend
+	["Tainted Lilith"] = "Gello's tear damage is doubled", -- Gello (for BFFS pedestal)
+}
+EID:updateDescriptionsViaTable(repBFFSSynergies, EID.descriptions[languageCode].BFFSSynergies)
+
 EID.descriptions[languageCode].birthright ={
 	{"Isaac", "Izaak", "Wszystkie przedmioty przewijają się przez 2 opcje"},
 	{"Magdalene", "Magdalena", "↑ {{Heart}} +1 Czerwony kontener#Maksymalna ilość kontenerów na serca jest zwiększona do 18"},
